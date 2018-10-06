@@ -1,10 +1,7 @@
 <ul class="video-list">
   
-  <!-- <video-list-entry ng-repeat="vid in videos"></video-list-entry> -->
-  <video-list-entry vid="$ctrl.videos"></video-list-entry>
-  <!-- <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
-  <video-list-entry><h5><em>videoListEntry</em> component goes here</h5></video-list-entry> -->
+  
+  <video-list-entry videos="$ctrl.videos" on-click="$ctrl.onClick" video="vid" ng-repeat="vid in $ctrl.videos"></video-list-entry>
+  
 </ul>
  
