@@ -5,7 +5,7 @@ angular
     templateUrl: "src/templates/app.html",
     controller: function appController(youTube) {
       this.videos = window.exampleVideoData;
-      this.currentVideo = this.videos ? this.videos[0] : null;
+      this.currentVideo = this.videos[0];
       this.onClick = video => {
         //console.log(this, video);
 
